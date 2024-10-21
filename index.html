@@ -1,138 +1,56 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vlog sobre el Barrio Frenesi</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <h1>Reseña del Barrio Frenesi de la Explanada</h1>
-        </header>
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #efa94a;
+    margin: 0;
+    padding: 0;
+}
 
-        <div class="media-grid">
-            <!-- Videos e Imágenes -->
-            <div class="media-item">
-                <video controls>
-                    <source src="1.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de este video.
-                </video>
-            </div>
-            <div class="media-item">
-                <img src="1.jpg" alt="Imagen de la feria">
-            </div>
-            <div class="media-item">
-                <video controls>
-                    <source src="2.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de este video.
-                </video>
-            </div>
-            <div class="media-item">
-                <img src="2.jpg" alt="Imagen de la feria">
-            </div>
-            <div class="media-item">
-                <video controls>
-                    <source src="3.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de este video.
-                </video>
-            </div>
-            <div class="media-item">
-                <img src="3.jpg" alt="Imagen de la feria">
-            </div>
-            <div class="media-item">
-                <video controls>
-                    <source src="4.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de este video.
-                </video>
-            </div>
-            <div class="media-item">
-                <img src="4.jpg" alt="Imagen de la feria">
-            </div>
-            <div class="media-item">
-                <video controls>
-                    <source src="5.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de este video.
-                </video>
-            </div>
-            <div class="media-item">
-                <img src="5.jpg" alt="Imagen de la feria">
-            </div>
-            <div class="media-item">
-                <video controls>
-                    <source src="6.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de este video.
-                </video>
-            </div>
-            <div class="media-item">
-                <img src="6.jpg" alt="Imagen de la feria">
-            </div>
-            <div class="media-item">
-                <video controls>
-                    <source src="7.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de este video.
-                </video>
-            </div>
-            <div class="media-item">
-                <img src="7.jpg" alt="Imagen de la feria">
-            </div>
-            <div class="media-item">
-                <video controls>
-                    <source src="8.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de este video.
-                </video>
-            </div>
-            <div class="media-item">
-                <img src="8.jpg" alt="Imagen de la feria">
-            </div>
-            <div class="media-item">
-                <video controls>
-                    <source src="9.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de este video.
-                </video>
-            </div>
-            <div class="media-item">
-                <img src="9.jpg" alt="Imagen de la feria">
-            </div>
-            <div class="media-item">
-                <video controls>
-                    <source src="10.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de este video.
-                </video>
-            </div>
-            <div class="media-item">
-                <img src="10.jpg" alt="Imagen de la feria">
-            </div>
-            <div class="media-item">
-                <video controls>
-                    <source src="11.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de este video.
-                </video>
-            </div>
-            <div class="media-item">
-                <img src="11.jpg" alt="Imagen de la feria">
-            </div>
-            <div class="media-item">
-                <video controls>
-                    <source src="12.mp4" type="video/mp4">
-                    Tu navegador no soporta la reproducción de este video.
-                </video>
-            </div>
-            <div class="media-item">
-                <img src="12.jpg" alt="Imagen de la feria">
-            </div>
-            <div class="media-item">
-                <video controls>
-                    <source src="13.mov" type="video/mp4">
-                    Tu navegador no soporta la reproducción de este video.
-                </video>
-            </div>
-            <div class="media-item">
-                <img src="13.jpg" alt="Imagen de la feria">
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color:   #d3c182;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Tres columnas responsivas */
+    gap: 15px; /* Espacio entre los elementos */
+    margin-top: 20px;
+}
+
+.media-item {
+    border-radius: 10px;
+    overflow: hidden; /* Para que los bordes redondeados se apliquen */
+    transition: transform 0.3s ease;
+}
+
+.media-item:hover {
+    transform:
+    transform: scale(1.05); /* Zoom al pasar el mouse */
+}
+
+video, img {
+    width: 100%; /* Ancho completo */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}

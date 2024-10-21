@@ -1,0 +1,56 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bf5949;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color:   #d3c182;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+}
+
+.media-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Tres columnas responsivas */
+    gap: 15px; /* Espacio entre los elementos */
+    margin-top: 20px;
+}
+
+.media-item {
+    border-radius: 10px;
+    overflow: hidden; /* Para que los bordes redondeados se apliquen */
+    transition: transform 0.3s ease;
+}
+
+.media-item:hover {
+    transform:
+    transform: scale(1.05); /* Zoom al pasar el mouse */
+}
+
+video, img {
+    width: 100%; /* Ancho completo */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+}
